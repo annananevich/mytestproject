@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "target": "ES6",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*",
+    "tests/**/*",
+    "api/else/delete.test.js",
+    "api/else/patch.test.js",
+    "api/else/post.test.js"
+  ],
+  "exclude": ["node_modules"]
+}

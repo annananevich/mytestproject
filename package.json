@@ -1,0 +1,29 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/**/*.test.js",
+    "test1": "mocha --require ts-node/register tests/get.test.ts",
+    "test2": "mocha --require ts-node/register tests/delete.test.ts",
+    "test3": "mocha --require ts-node/register tests/post.test.ts",
+    "test4": "mocha --require ts-node/register tests/update.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^5.0.1",
+    "@types/mocha": "^10.0.10",
+    "@types/supertest": "^6.0.2",
+    "chai": "^5.1.2",
+    "mocha": "^11.1.0",
+    "supertest": "^7.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.5.0"
+  }
+}
