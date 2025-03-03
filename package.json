@@ -8,12 +8,16 @@
     "test1": "mocha --require ts-node/register tests/get.test.ts",
     "test2": "mocha --require ts-node/register tests/delete.test.ts",
     "test3": "mocha --require ts-node/register tests/post.test.ts",
-    "test4": "mocha --require ts-node/register tests/update.test.ts"
+    "test4": "mocha --require ts-node/register tests/update.test.ts",
+    "test5": "mocha --require ts-node/register tests/e2e.test.ts",
+    "test:all": "cucumber-js --require features/step_definitions/**/*.ts --require-module ts-node/register",
+    "test:e2e": "cucumber-js features/e2e.feature --require features/step_definitions/**/*.ts --require-module ts-node/register"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
     "@types/chai": "^5.0.1",
     "@types/mocha": "^10.0.10",
     "@types/supertest": "^6.0.2",
@@ -24,6 +28,7 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
-    "@faker-js/faker": "^9.5.0"
+    "@faker-js/faker": "^9.5.0",
+    "reflect-metadata": "^0.2.2"
   }
 }
