@@ -1,4 +1,4 @@
-Feature: Booking E2E
+Feature: Booking
 
   Scenario: Creating, updating, and deleting a booking
     Given I have a valid authentication token
