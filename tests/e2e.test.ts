@@ -1,4 +1,3 @@
-import supertest from "supertest";
 import { expect } from "chai";
 import { authCreateToken, request } from "../src/utils";
 import { createBooking } from "../api/booking/postBooking";
